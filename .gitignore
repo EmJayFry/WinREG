@@ -121,6 +121,9 @@ DocProject/Help/*.hhp
 DocProject/Help/Html2
 DocProject/Help/html
 
+# Subversion Directory
+svn/
+
 # Click-Once directory
 publish/
 
