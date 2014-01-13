@@ -122,7 +122,7 @@ DocProject/Help/Html2
 DocProject/Help/html
 
 # Subversion Directory
-svn/
+_svn/
 
 # Click-Once directory
 publish/
@@ -216,3 +216,9 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+entries
+format
+
+/WinREG_3.2/_svn/*.db
+
+/WinREG_3.2/_svn/pristine/00/*.svn-base

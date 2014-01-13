@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="urlFreeREG" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://www.freereg.org.uk/cgi/Login.pl</Value>
+    </Setting>
+    <Setting Name="MyFormSize" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">901, 614</Value>
+    </Setting>
+    <Setting Name="MyFormLocation" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="MyFormWindowState" Type="System.Windows.Forms.FormWindowState" Scope="User">
+      <Value Profile="(Default)">Normal</Value>
+    </Setting>
+    <Setting Name="HelpFileName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">WinREG3a.chm</Value>
+    </Setting>
+    <Setting Name="listDirectories" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MyDisplayTooltips" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="TooltipsDisplayPeriod" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

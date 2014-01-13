@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LookupTables" targetNamespace="http://tempuri.org/LookupTables.xsd" xmlns:mstns="http://tempuri.org/LookupTables.xsd" xmlns="http://tempuri.org/LookupTables.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LookupTables" msdata:IsDataSet="true" msdata:Locale="" msprop:Generator_UserDSName="LookupTables" msprop:Generator_DataSetName="LookupTables" msprop:EnableTableAdapterManager="True">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BaptismSex" msprop:Generator_UserTableName="BaptismSex" msprop:Generator_RowDeletedName="BaptismSexRowDeleted" msprop:Generator_RowChangedName="BaptismSexRowChanged" msprop:Generator_RowClassName="BaptismSexRow" msprop:Generator_RowChangingName="BaptismSexRowChanging" msprop:Generator_RowEvArgName="BaptismSexRowChangeEvent" msprop:Generator_RowEvHandlerName="BaptismSexRowChangeEventHandler" msprop:Generator_TableClassName="BaptismSexDataTable" msprop:Generator_TableVarName="tableBaptismSex" msprop:Generator_RowDeletingName="BaptismSexRowDeleting" msprop:Generator_TablePropName="BaptismSex">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Type" msdata:ReadOnly="true" msdata:Caption="Record Type" msprop:Generator_UserColumnName="Type" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_ColumnVarNameInTable="columnType" type="xs:string" default="" />
+              <xs:element name="Code" msdata:Caption="Sex code" msprop:Generator_UserColumnName="Code" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_ColumnVarNameInTable="columnCode" type="xs:string" default="" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_ColumnVarNameInTable="columnDescription" default="">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BurialRelationship" msprop:Generator_UserTableName="BurialRelationship" msprop:Generator_RowDeletedName="BurialRelationshipRowDeleted" msprop:Generator_RowChangedName="BurialRelationshipRowChanged" msprop:Generator_RowClassName="BurialRelationshipRow" msprop:Generator_RowChangingName="BurialRelationshipRowChanging" msprop:Generator_RowEvArgName="BurialRelationshipRowChangeEvent" msprop:Generator_RowEvHandlerName="BurialRelationshipRowChangeEventHandler" msprop:Generator_TableClassName="BurialRelationshipDataTable" msprop:Generator_TableVarName="tableBurialRelationship" msprop:Generator_RowDeletingName="BurialRelationshipRowDeleting" msprop:Generator_TablePropName="BurialRelationship">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Type" msdata:ReadOnly="true" msdata:Caption="Record Type" msprop:Generator_UserColumnName="Type" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_ColumnPropNameInRow="Type" type="xs:string" default="&quot;User&quot;" />
+              <xs:element name="FileValue" msprop:Generator_UserColumnName="FileValue" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="FileValue" msprop:Generator_ColumnPropNameInTable="FileValueColumn" msprop:Generator_ColumnVarNameInTable="columnFileValue" type="xs:string" default="" />
+              <xs:element name="DisplayValue" msprop:Generator_UserColumnName="DisplayValue" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="DisplayValue" msprop:Generator_ColumnPropNameInTable="DisplayValueColumn" msprop:Generator_ColumnVarNameInTable="columnDisplayValue" default="">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GroomCondition" msprop:Generator_UserTableName="GroomCondition" msprop:Generator_RowDeletedName="GroomConditionRowDeleted" msprop:Generator_RowChangedName="GroomConditionRowChanged" msprop:Generator_RowClassName="GroomConditionRow" msprop:Generator_RowChangingName="GroomConditionRowChanging" msprop:Generator_RowEvArgName="GroomConditionRowChangeEvent" msprop:Generator_RowEvHandlerName="GroomConditionRowChangeEventHandler" msprop:Generator_TableClassName="GroomConditionDataTable" msprop:Generator_TableVarName="tableGroomCondition" msprop:Generator_RowDeletingName="GroomConditionRowDeleting" msprop:Generator_TablePropName="GroomCondition">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Type" msdata:ReadOnly="true" msdata:Caption="Record Type" msprop:Generator_UserColumnName="Type" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_ColumnVarNameInTable="columnType" type="xs:string" default="&quot;User&quot;" />
+              <xs:element name="FileValue" msprop:Generator_UserColumnName="FileValue" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="FileValue" msprop:Generator_ColumnPropNameInTable="FileValueColumn" msprop:Generator_ColumnVarNameInTable="columnFileValue" type="xs:string" default="" />
+              <xs:element name="DisplayValue" msprop:Generator_UserColumnName="DisplayValue" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="DisplayValue" msprop:Generator_ColumnPropNameInTable="DisplayValueColumn" msprop:Generator_ColumnVarNameInTable="columnDisplayValue" default="">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BrideCondition" msprop:Generator_UserTableName="BrideCondition" msprop:Generator_RowDeletedName="BrideConditionRowDeleted" msprop:Generator_RowChangedName="BrideConditionRowChanged" msprop:Generator_RowClassName="BrideConditionRow" msprop:Generator_RowChangingName="BrideConditionRowChanging" msprop:Generator_RowEvArgName="BrideConditionRowChangeEvent" msprop:Generator_RowEvHandlerName="BrideConditionRowChangeEventHandler" msprop:Generator_TableClassName="BrideConditionDataTable" msprop:Generator_TableVarName="tableBrideCondition" msprop:Generator_RowDeletingName="BrideConditionRowDeleting" msprop:Generator_TablePropName="BrideCondition">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Type" msdata:ReadOnly="true" msdata:Caption="Record Type" msprop:Generator_UserColumnName="Type" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_ColumnVarNameInTable="columnType" type="xs:string" default="&quot;User&quot;" />
+              <xs:element name="FileValue" msprop:Generator_UserColumnName="FileValue" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="FileValue" msprop:Generator_ColumnPropNameInTable="FileValueColumn" msprop:Generator_ColumnVarNameInTable="columnFileValue" type="xs:string" default="" />
+              <xs:element name="DisplayValue" msprop:Generator_UserColumnName="DisplayValue" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="DisplayValue" msprop:Generator_ColumnPropNameInTable="DisplayValueColumn" msprop:Generator_ColumnVarNameInTable="columnDisplayValue" default="">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RecordTypes" msprop:Generator_UserTableName="RecordTypes" msprop:Generator_RowDeletedName="RecordTypesRowDeleted" msprop:Generator_RowChangedName="RecordTypesRowChanged" msprop:Generator_RowClassName="RecordTypesRow" msprop:Generator_RowChangingName="RecordTypesRowChanging" msprop:Generator_RowEvArgName="RecordTypesRowChangeEvent" msprop:Generator_RowEvHandlerName="RecordTypesRowChangeEventHandler" msprop:Generator_TableClassName="RecordTypesDataTable" msprop:Generator_TableVarName="tableRecordTypes" msprop:Generator_RowDeletingName="RecordTypesRowDeleting" msprop:Generator_TablePropName="RecordTypes">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Type" msprop:Generator_UserColumnName="Type" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_ColumnVarNameInTable="columnType" default="">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_ColumnVarNameInTable="columnDescription" default="">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ChapmanCodes" msprop:Generator_UserTableName="ChapmanCodes" msprop:Generator_RowDeletedName="ChapmanCodesRowDeleted" msprop:Generator_RowChangedName="ChapmanCodesRowChanged" msprop:Generator_RowClassName="ChapmanCodesRow" msprop:Generator_RowChangingName="ChapmanCodesRowChanging" msprop:Generator_RowEvArgName="ChapmanCodesRowChangeEvent" msprop:Generator_RowEvHandlerName="ChapmanCodesRowChangeEventHandler" msprop:Generator_TableClassName="ChapmanCodesDataTable" msprop:Generator_TableVarName="tableChapmanCodes" msprop:Generator_RowDeletingName="ChapmanCodesRowDeleting" msprop:Generator_TablePropName="ChapmanCodes">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Code" msprop:Generator_UserColumnName="Code" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_ColumnPropNameInRow="Code" default="">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="County" msprop:Generator_UserColumnName="County" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="County" msprop:Generator_ColumnPropNameInTable="CountyColumn" msprop:Generator_ColumnVarNameInTable="columnCounty" default="">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BaptismSex" />
+      <xs:field xpath="mstns:Code" />
+    </xs:unique>
+    <xs:unique name="BurialRelationship_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BurialRelationship" />
+      <xs:field xpath="mstns:FileValue" />
+    </xs:unique>
+    <xs:unique name="GroomCondition_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:GroomCondition" />
+      <xs:field xpath="mstns:FileValue" />
+    </xs:unique>
+    <xs:unique name="BrideCondition_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BrideCondition" />
+      <xs:field xpath="mstns:FileValue" />
+    </xs:unique>
+    <xs:unique name="RecordTypes_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:RecordTypes" />
+      <xs:field xpath="mstns:Type" />
+    </xs:unique>
+    <xs:unique name="ChapmanCodes_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ChapmanCodes" />
+      <xs:field xpath="mstns:Code" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

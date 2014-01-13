@@ -1,0 +1,600 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B8C2C9DA-F834-4668-90C0-5C12CDF9E9CF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WinREG.My.MyApplication</StartupObject>
+    <RootNamespace>WinREG</RootNamespace>
+    <AssemblyName>WinREG</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>Images\appico.ico</ApplicationIcon>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>WinREG.snk</AssemblyOriginatorKeyFile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkSubset>
+    </TargetFrameworkSubset>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>false</GenerateManifests>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WinREG.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DefineConstants>
+    </DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WinREG.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>WinREG.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <DefineConstants>
+    </DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>WinREG.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ColorComboBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=75614fed95403164, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ColorComboBox\ColorComboBox\bin\Release\ColorComboBox.dll</HintPath>
+    </Reference>
+    <Reference Include="CustomValidation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=75614fed95403164, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\CustomValidation\CustomValidation\bin\x86\Release\CustomValidation.dll</HintPath>
+    </Reference>
+    <Reference Include="DefaultPrograms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=75614fed95403164, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DefaultPrograms\DefaultPrograms\bin\Release\DefaultPrograms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Windows API Code Pack 1.1\binaries\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Windows API Code Pack 1.1\binaries\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="regexlib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=75614fed95403164, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\RegexLibraryBuilder\Binaries\Release\regexlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\WindowsFormsIntegration\3.0.0.0__31bf3856ad364e35\WindowsFormsIntegration.dll</HintPath>
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="ZoomAndPan, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Walkthroughs\AdvancedZoomAndPanSample\ZoomAndPan\bin\Release\ZoomAndPan.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.Designer.vb">
+      <DependentUpon>AboutBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BadRecordsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BadRecordsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BadRecordsDataSet.vb">
+      <DependentUpon>BadRecordsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BindableListView.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dlgBadRecords.Designer.vb">
+      <DependentUpon>dlgBadRecords.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dlgBadRecords.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgChangeHistory.Designer.vb">
+      <DependentUpon>dlgChangeHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dlgChangeHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgColumnVisibility.Designer.vb">
+      <DependentUpon>dlgColumnVisibility.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dlgColumnVisibility.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgEditAutoCompletionEntry.Designer.vb">
+      <DependentUpon>dlgEditAutoCompletionEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dlgEditAutoCompletionEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgEditAutoCompletionList.Designer.vb">
+      <DependentUpon>dlgEditAutoCompletionList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dlgEditAutoCompletionList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgEditBadRecord.Designer.vb">
+      <DependentUpon>dlgEditBadRecord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dlgEditBadRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgEditFileDetails.designer.vb">
+      <DependentUpon>dlgEditFileDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dlgEditFileDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="dlgBackupRestore.designer.vb">
+      <DependentUpon>dlgBackupRestore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dlgBackupRestore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DateHelperClass.vb" />
+    <Compile Include="dlgDateHelper.designer.vb">
+      <DependentUpon>dlgDateHelper.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dlgDateHelper.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgEditFileName.Designer.vb">
+      <DependentUpon>dlgEditFileName.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dlgEditFileName.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgExcelFileDetails.Designer.vb">
+      <DependentUpon>dlgExcelFileDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dlgExcelFileDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgInformation.Designer.vb">
+      <DependentUpon>dlgInformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dlgInformation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgMultipleWorksheets.Designer.vb">
+      <DependentUpon>dlgMultipleWorksheets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dlgMultipleWorksheets.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgOptions.Designer.vb">
+      <DependentUpon>dlgOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dlgOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgRecoverFromBackup.Designer.vb">
+      <DependentUpon>dlgRecoverFromBackup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dlgRecoverFromBackup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgViewLogFile.Designer.vb">
+      <DependentUpon>dlgViewLogFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dlgViewLogFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgNewTranscriptionFile.Designer.vb">
+      <DependentUpon>dlgNewTranscriptionFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dlgNewTranscriptionFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgImageViewer.designer.vb">
+      <DependentUpon>dlgImageViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dlgImageViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgFileValidation.designer.vb">
+      <DependentUpon>dlgFileValidation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dlgFileValidation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileAssociation.vb" />
+    <Compile Include="HelpTextWindow.xaml.vb">
+      <DependentUpon>HelpTextWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="JulianDate.vb" />
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxes.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="myDGV.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RegExTextBoxClass.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ScaleToPercentConverter.vb" />
+    <Compile Include="Settings.vb" />
+    <Compile Include="SplashScreen.Designer.vb">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgLookupTables.designer.vb">
+      <DependentUpon>dlgLookupTables.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dlgLookupTables.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UCFDataClass.vb" />
+    <Compile Include="dlgUCF.designer.vb">
+      <DependentUpon>dlgUCF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dlgUCF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgUserSettings.designer.vb">
+      <DependentUpon>dlgUserSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dlgUserSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageViewer.xaml.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>ImageViewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Validations.vb" />
+    <Compile Include="WinREG2_Panel.Designer.vb">
+      <DependentUpon>WinREG2_Panel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinREG2_Panel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgNewTranscriptionFile.resx">
+      <DependentUpon>dlgNewTranscriptionFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgLookupTables.resx">
+      <DependentUpon>dlgLookupTables.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Images\CleyNextTheSeaChurch.jpg" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\DataSources\MainForm.FileHeader.datasource" />
+    <None Include="My Project\DataSources\MainForm.UserDetails.datasource" />
+    <None Include="My Project\DataSources\WinREG.My.MySettings.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="dlgBadRecords.resx">
+      <DependentUpon>dlgBadRecords.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgChangeHistory.resx">
+      <DependentUpon>dlgChangeHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgColumnVisibility.resx">
+      <DependentUpon>dlgColumnVisibility.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgEditAutoCompletionEntry.resx">
+      <DependentUpon>dlgEditAutoCompletionEntry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgEditAutoCompletionList.resx">
+      <DependentUpon>dlgEditAutoCompletionList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgEditBadRecord.resx">
+      <DependentUpon>dlgEditBadRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgEditFileDetails.resx">
+      <DependentUpon>dlgEditFileDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\appico.ico" />
+    <EmbeddedResource Include="dlgBackupRestore.resx">
+      <DependentUpon>dlgBackupRestore.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgDateHelper.resx">
+      <DependentUpon>dlgDateHelper.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgEditFileName.resx">
+      <DependentUpon>dlgEditFileName.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgExcelFileDetails.resx">
+      <DependentUpon>dlgExcelFileDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgInformation.resx">
+      <DependentUpon>dlgInformation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgMultipleWorksheets.resx">
+      <DependentUpon>dlgMultipleWorksheets.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgOptions.resx">
+      <DependentUpon>dlgOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgRecoverFromBackup.resx">
+      <DependentUpon>dlgRecoverFromBackup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgViewLogFile.resx">
+      <DependentUpon>dlgViewLogFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgUCF.resx">
+      <DependentUpon>dlgUCF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgImageViewer.resx">
+      <DependentUpon>dlgImageViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgUserSettings.resx">
+      <DependentUpon>dlgUserSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgFileValidation.resx">
+      <DependentUpon>dlgFileValidation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="myDGV.resx">
+      <DependentUpon>myDGV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinREG2_Panel.resx">
+      <DependentUpon>WinREG2_Panel.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+    <None Include="WinREG.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CaseText\CaseText.vbproj">
+      <Project>{92A2C466-325F-45A3-874B-6A364405FA31}</Project>
+      <Name>CaseText</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ErrorFileCcreated\ErrorFileCreated.vbproj">
+      <Project>{A5DC23FB-C094-4D18-B69F-04FE471B0DFC}</Project>
+      <Name>ErrorFileCreated</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FreeRegBrowser\FreeRegBrowser.vbproj">
+      <Project>{A2A88FDF-DBA8-4FC9-9486-D2F0528F3E05}</Project>
+      <Name>FreeRegBrowser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LogListener\LogListener.vbproj">
+      <Project>{C09FFF19-6E4B-4B41-ADC3-8D43FF9699BE}</Project>
+      <Name>LogListener</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LookupTables\LookupTables.vbproj">
+      <Project>{C3EAF49A-E864-4234-8860-DBDD335778F0}</Project>
+      <Name>LookupTables</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TranscriptionTables\TranscriptionTables.vbproj">
+      <Project>{88B014CC-B9C9-4CD5-BF08-AF67453D31E9}</Project>
+      <Name>TranscriptionTables</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BadRecordsDataSet.xsc">
+      <DependentUpon>BadRecordsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BadRecordsDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BadRecordsDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="BadRecordsDataSet.xss">
+      <DependentUpon>BadRecordsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\DataSources\dlgBadRecords.datasource" />
+    <None Include="My Project\DataSources\LookupTables.datasource" />
+    <None Include="My Project\DataSources\TranscriptionTables.datasource" />
+    <None Include="Resources\duplicate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="HelpText.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HelpTextWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ImageViewer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\RightArrow_Blue.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\LeftArrow_Blue.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\diskdrive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\folder.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,908 @@
+<LookupTables xmlns="http://tempuri.org/LookupTables.xsd">
+  <xs:schema id="LookupTables" targetNamespace="http://tempuri.org/LookupTables.xsd" xmlns:mstns="http://tempuri.org/LookupTables.xsd" xmlns="http://tempuri.org/LookupTables.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="LookupTables" msdata:IsDataSet="true" msdata:Locale="">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="BaptismSexTable">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Type" msdata:ReadOnly="true" msdata:Caption="Record Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Code" msdata:Caption="Sex code" type="xs:string" />
+                <xs:element name="Description" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="32" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="BurialRelationshipTable">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Type" msdata:ReadOnly="true" msdata:Caption="Record Type" type="xs:string" minOccurs="0" />
+                <xs:element name="FileValue" type="xs:string" />
+                <xs:element name="DisplayValue" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="32" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="GroomConditionTable">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Type" msdata:ReadOnly="true" msdata:Caption="Record Type" type="xs:string" minOccurs="0" />
+                <xs:element name="FileValue" type="xs:string" />
+                <xs:element name="DisplayValue" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="32" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="BrideConditionTable">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Type" msdata:ReadOnly="true" msdata:Caption="Record Type" type="xs:string" minOccurs="0" />
+                <xs:element name="FileValue" type="xs:string" />
+                <xs:element name="DisplayValue" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="32" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="RecordTypes">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Type" default="">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="2" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Description" default="">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="32" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ChapmanCodes">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Code" default="">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="3" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="County" default="">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="32" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//mstns:BaptismSexTable" />
+        <xs:field xpath="mstns:Code" />
+      </xs:unique>
+      <xs:unique name="BurialRelationshipTable_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//mstns:BurialRelationshipTable" />
+        <xs:field xpath="mstns:FileValue" />
+      </xs:unique>
+      <xs:unique name="GroomConditionTable_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//mstns:GroomConditionTable" />
+        <xs:field xpath="mstns:FileValue" />
+      </xs:unique>
+      <xs:unique name="BrideConditionTable_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//mstns:BrideConditionTable" />
+        <xs:field xpath="mstns:FileValue" />
+      </xs:unique>
+      <xs:unique name="RecordTypes_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//mstns:RecordTypes" />
+        <xs:field xpath="mstns:Type" />
+      </xs:unique>
+      <xs:unique name="ChapmanCodes_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//mstns:ChapmanCodes" />
+        <xs:field xpath="mstns:Code" />
+      </xs:unique>
+    </xs:element>
+  </xs:schema>
+  <BaptismSexTable>
+    <Type>Application</Type>
+    <Code>&#x0;</Code>
+    <Description />
+  </BaptismSexTable>
+  <BaptismSexTable>
+    <Type>Application</Type>
+    <Code>-</Code>
+    <Description>Unknown</Description>
+  </BaptismSexTable>
+  <BaptismSexTable>
+    <Type>Application</Type>
+    <Code>M</Code>
+    <Description>Male</Description>
+  </BaptismSexTable>
+  <BaptismSexTable>
+    <Type>Application</Type>
+    <Code>F</Code>
+    <Description>Female</Description>
+  </BaptismSexTable>
+  <BurialRelationshipTable>
+    <Type>Application</Type>
+    <FileValue />
+    <DisplayValue />
+  </BurialRelationshipTable>
+  <BurialRelationshipTable>
+    <Type>Application</Type>
+    <FileValue>son of</FileValue>
+    <DisplayValue>son of</DisplayValue>
+  </BurialRelationshipTable>
+  <BurialRelationshipTable>
+    <Type>Application</Type>
+    <FileValue>dau of</FileValue>
+    <DisplayValue>dau of</DisplayValue>
+  </BurialRelationshipTable>
+  <BurialRelationshipTable>
+    <Type>Application</Type>
+    <FileValue>wife of</FileValue>
+    <DisplayValue>wife of</DisplayValue>
+  </BurialRelationshipTable>
+  <BurialRelationshipTable>
+    <Type>Application</Type>
+    <FileValue>husband of</FileValue>
+    <DisplayValue>husband of</DisplayValue>
+  </BurialRelationshipTable>
+  <BurialRelationshipTable>
+    <Type>Application</Type>
+    <FileValue>widow of</FileValue>
+    <DisplayValue>widow of</DisplayValue>
+  </BurialRelationshipTable>
+  <BurialRelationshipTable>
+    <Type>Application</Type>
+    <FileValue>relict of</FileValue>
+    <DisplayValue>relict of</DisplayValue>
+  </BurialRelationshipTable>
+  <GroomConditionTable>
+    <Type>Application</Type>
+    <FileValue />
+    <DisplayValue />
+  </GroomConditionTable>
+  <GroomConditionTable>
+    <Type>Application</Type>
+    <FileValue>bachelor</FileValue>
+    <DisplayValue>bachelor</DisplayValue>
+  </GroomConditionTable>
+  <GroomConditionTable>
+    <Type>Application</Type>
+    <FileValue>widower</FileValue>
+    <DisplayValue>widower</DisplayValue>
+  </GroomConditionTable>
+  <GroomConditionTable>
+    <Type>Application</Type>
+    <FileValue>single</FileValue>
+    <DisplayValue>single man</DisplayValue>
+  </GroomConditionTable>
+  <GroomConditionTable>
+    <Type>Application</Type>
+    <FileValue>virgin</FileValue>
+    <DisplayValue>virgin</DisplayValue>
+  </GroomConditionTable>
+  <GroomConditionTable>
+    <Type>Application</Type>
+    <FileValue>annulled</FileValue>
+    <DisplayValue>previous marriage annulled</DisplayValue>
+  </GroomConditionTable>
+  <GroomConditionTable>
+    <Type>Application</Type>
+    <FileValue>divorced</FileValue>
+    <DisplayValue>divorced man</DisplayValue>
+  </GroomConditionTable>
+  <GroomConditionTable>
+    <Type>Application</Type>
+    <FileValue>dissolved</FileValue>
+    <DisplayValue>previous marriage dissolved</DisplayValue>
+  </GroomConditionTable>
+  <GroomConditionTable>
+    <Type>Application</Type>
+    <FileValue>minor</FileValue>
+    <DisplayValue>minor</DisplayValue>
+  </GroomConditionTable>
+  <BrideConditionTable>
+    <Type>Application</Type>
+    <FileValue />
+    <DisplayValue />
+  </BrideConditionTable>
+  <BrideConditionTable>
+    <Type>Application</Type>
+    <FileValue>spinster</FileValue>
+    <DisplayValue>spinster</DisplayValue>
+  </BrideConditionTable>
+  <BrideConditionTable>
+    <Type>Application</Type>
+    <FileValue>widow</FileValue>
+    <DisplayValue>widow</DisplayValue>
+  </BrideConditionTable>
+  <BrideConditionTable>
+    <Type>Application</Type>
+    <FileValue>single</FileValue>
+    <DisplayValue>single woman</DisplayValue>
+  </BrideConditionTable>
+  <BrideConditionTable>
+    <Type>Application</Type>
+    <FileValue>maiden</FileValue>
+    <DisplayValue>maiden</DisplayValue>
+  </BrideConditionTable>
+  <BrideConditionTable>
+    <Type>Application</Type>
+    <FileValue>virgin</FileValue>
+    <DisplayValue>virgin</DisplayValue>
+  </BrideConditionTable>
+  <BrideConditionTable>
+    <Type>Application</Type>
+    <FileValue>minor</FileValue>
+    <DisplayValue>minor</DisplayValue>
+  </BrideConditionTable>
+  <BrideConditionTable>
+    <Type>Application</Type>
+    <FileValue>divorcee</FileValue>
+    <DisplayValue>divorcee</DisplayValue>
+  </BrideConditionTable>
+  <BrideConditionTable>
+    <Type>Application</Type>
+    <FileValue>annulled</FileValue>
+    <DisplayValue>previous marriage annulled</DisplayValue>
+  </BrideConditionTable>
+  <BrideConditionTable>
+    <Type>Application</Type>
+    <FileValue>dissolved</FileValue>
+    <DisplayValue>previous marriage dissolved</DisplayValue>
+  </BrideConditionTable>
+  <RecordTypes>
+    <Type>BA</Type>
+    <Description>Baptisms</Description>
+  </RecordTypes>
+  <RecordTypes>
+    <Type>BU</Type>
+    <Description>Burials</Description>
+  </RecordTypes>
+  <RecordTypes>
+    <Type>MA</Type>
+    <Description>Marriages</Description>
+  </RecordTypes>
+  <ChapmanCodes>
+    <Code>CHI</Code>
+    <County>Channel Isles</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>ENG</Code>
+    <County>England</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>IOM</Code>
+    <County>Isle of Man</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>IRL</Code>
+    <County>Ireland</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>SCT</Code>
+    <County>Scotland</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>WLS</Code>
+    <County>Wales</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>ALL</Code>
+    <County>All countries</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>ALD</Code>
+    <County>Alderney</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>GSY</Code>
+    <County>Guernsey</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>JSY</Code>
+    <County>Jersey</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>SRK</Code>
+    <County>Sark</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>BDF</Code>
+    <County>Bedfordshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>BRK</Code>
+    <County>Berkshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>BKM</Code>
+    <County>Buckinghamshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>CAM</Code>
+    <County>Cambridgeshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>CHS</Code>
+    <County>Cheshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>CON</Code>
+    <County>Cornwall</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>CUL</Code>
+    <County>Cumberland</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>DBY</Code>
+    <County>Derbyshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>DEV</Code>
+    <County>Devonshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>DOR</Code>
+    <County>Dorset</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>DUR</Code>
+    <County>Durham</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>ESS</Code>
+    <County>Essex</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>GLS</Code>
+    <County>Gloucestershire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>HAM</Code>
+    <County>Hampshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>HEF</Code>
+    <County>Herefordshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>HRT</Code>
+    <County>Hertfordshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>HUN</Code>
+    <County>Huntingdonshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>IOW</Code>
+    <County>Isle of Wight</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>KEN</Code>
+    <County>Kent</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>LAN</Code>
+    <County>Lancashire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>LEI</Code>
+    <County>Leicestershire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>LIN</Code>
+    <County>Lincolnshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>LND</Code>
+    <County>London</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>MDX</Code>
+    <County>Middlesex</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>NFK</Code>
+    <County>Norfolk</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>NTH</Code>
+    <County>Northamptonshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>NBL</Code>
+    <County>Northumberland</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>NTT</Code>
+    <County>Nottinghamshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>OXF</Code>
+    <County>Oxfordshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>RUT</Code>
+    <County>Rutland</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>SAL</Code>
+    <County>Shropshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>SOM</Code>
+    <County>Somerset</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>STS</Code>
+    <County>Staffordshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>SFK</Code>
+    <County>Suffolk</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>SRY</Code>
+    <County>Surrey</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>SSX</Code>
+    <County>Sussex</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>WAR</Code>
+    <County>Warwickshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>WES</Code>
+    <County>Westmorland</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>WIL</Code>
+    <County>Wiltshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>WOR</Code>
+    <County>Worcestershire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>YKS</Code>
+    <County>Yorkshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>ERY</Code>
+    <County>East Riding Yorkshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>NRY</Code>
+    <County>North Riding Yorkshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>WRY</Code>
+    <County>West Riding Yorkshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>ABD</Code>
+    <County>Aberdeenshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>ANS</Code>
+    <County>Angus</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>ARL</Code>
+    <County>Argyllshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>AYR</Code>
+    <County>Ayrshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>BAN</Code>
+    <County>Banffshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>BEW</Code>
+    <County>Berwickshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>BUT</Code>
+    <County>Bute</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>CAI</Code>
+    <County>Caithness</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>CLK</Code>
+    <County>Clackmannanshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>DFS</Code>
+    <County>Dumfriesshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>DNB</Code>
+    <County>Dunbartonshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>ELN</Code>
+    <County>East Lothian</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>FIF</Code>
+    <County>Fifeshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>INV</Code>
+    <County>Inverness-shire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>KCD</Code>
+    <County>Kincardineshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>KRS</Code>
+    <County>Kinross-shire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>KKD</Code>
+    <County>Kircudbrightshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>LKS</Code>
+    <County>Lanarkshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>MLN</Code>
+    <County>Midlothian</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>MOR</Code>
+    <County>Moray</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>NAI</Code>
+    <County>Nairnshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>OKI</Code>
+    <County>Orkney</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>PEE</Code>
+    <County>Peeblesshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>PER</Code>
+    <County>Perthshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>RFW</Code>
+    <County>Renfrewshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>ROC</Code>
+    <County>Ross &amp; Cromarty</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>ROX</Code>
+    <County>Roxburghshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>SEL</Code>
+    <County>Selkirkshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>SHI</Code>
+    <County>Shetland</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>STI</Code>
+    <County>Stirlingshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>SUT</Code>
+    <County>Sutherland</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>WLN</Code>
+    <County>West Lothian</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>WIG</Code>
+    <County>Wigtownshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>BOR</Code>
+    <County>Borders</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>CEN</Code>
+    <County>Central</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>DGY</Code>
+    <County>Dumfries &amp; Galloway</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>GMP</Code>
+    <County>Grampian</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>HLD</Code>
+    <County>Highland</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>LTN</Code>
+    <County>Lothian</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>STD</Code>
+    <County>Strathclyde</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>TAY</Code>
+    <County>Tayside</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>WIS</Code>
+    <County>Western Isles</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>AGY</Code>
+    <County>Anglesey</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>BRE</Code>
+    <County>Brecknockshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>CAE</Code>
+    <County>Caernarfonshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>CGN</Code>
+    <County>Cardiganshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>CMN</Code>
+    <County>Carmarthenshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>DEN</Code>
+    <County>Denbighshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>FLN</Code>
+    <County>Flintshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>GLA</Code>
+    <County>Glamorgan</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>MER</Code>
+    <County>Merionethshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>MON</Code>
+    <County>Monmouthshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>MGY</Code>
+    <County>Montgomeryshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>PEM</Code>
+    <County>Pembrokeshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>RAD</Code>
+    <County>Radnorshire</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>CWD</Code>
+    <County>Clywd</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>DFD</Code>
+    <County>Dyfed</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>GNT</Code>
+    <County>Gwent</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>GWN</Code>
+    <County>Gwynedd</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>MGM</Code>
+    <County>Mid Glamorgan</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>POW</Code>
+    <County>Powys</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>SGM</Code>
+    <County>South Glamorgan</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>WGM</Code>
+    <County>West Glamorgan</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>ANT</Code>
+    <County>Antrim</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>ARM</Code>
+    <County>Armagh</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>CAR</Code>
+    <County>Carlow</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>CAV</Code>
+    <County>Cavan</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>CLA</Code>
+    <County>Clare</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>COR</Code>
+    <County>Cork</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>DON</Code>
+    <County>Donegal</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>DOW</Code>
+    <County>Down</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>DUB</Code>
+    <County>Dublin</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>FER</Code>
+    <County>Fermanagh</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>GAL</Code>
+    <County>Galway</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>KER</Code>
+    <County>Kerry</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>KID</Code>
+    <County>Kildare</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>KIK</Code>
+    <County>Kilkenny</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>LET</Code>
+    <County>Leitrim</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>LEX</Code>
+    <County>Leix</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>LIM</Code>
+    <County>Limerick</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>LDY</Code>
+    <County>Londonderry</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>LOG</Code>
+    <County>Longford</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>LOU</Code>
+    <County>Louth</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>MAY</Code>
+    <County>Mayo</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>MEA</Code>
+    <County>Meath</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>MOG</Code>
+    <County>Monaghan</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>OFF</Code>
+    <County>Offaly</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>ROS</Code>
+    <County>Roscommon</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>SLI</Code>
+    <County>Sligo</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>TIP</Code>
+    <County>Tipperary</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>TYR</Code>
+    <County>Tyrone</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>WAT</Code>
+    <County>Waterford</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>WEM</Code>
+    <County>Westmeath</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>WEX</Code>
+    <County>Wexford</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>WIC</Code>
+    <County>Wicklow</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>OVB</Code>
+    <County>Overseas (British Subject)</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>OVF</Code>
+    <County>Overseas (Foreign)</County>
+  </ChapmanCodes>
+  <ChapmanCodes>
+    <Code>UNK</Code>
+    <County>Unknown</County>
+  </ChapmanCodes>
+</LookupTables>

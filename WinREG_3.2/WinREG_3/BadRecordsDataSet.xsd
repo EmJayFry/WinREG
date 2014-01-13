@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BadRecordsDataSet" targetNamespace="http://tempuri.org/BadRecordsDataSet.xsd" xmlns:mstns="http://tempuri.org/BadRecordsDataSet.xsd" xmlns="http://tempuri.org/BadRecordsDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BadRecordsDataSet" msdata:IsDataSet="true" msdata:Locale="en" msprop:Generator_UserDSName="BadRecordsDataSet" msprop:Generator_DataSetName="BadRecordsDataSet" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BadRecords" msdata:Locale="en" msprop:Generator_UserTableName="BadRecords" msprop:Generator_RowDeletedName="BadRecordsRowDeleted" msprop:Generator_RowChangedName="BadRecordsRowChanged" msprop:Generator_RowClassName="BadRecordsRow" msprop:Generator_RowChangingName="BadRecordsRowChanging" msprop:Generator_RowEvArgName="BadRecordsRowChangeEvent" msprop:Generator_RowEvHandlerName="BadRecordsRowChangeEventHandler" msprop:Generator_TableClassName="BadRecordsDataTable" msprop:Generator_TableVarName="tableBadRecords" msprop:Generator_RowDeletingName="BadRecordsRowDeleting" msprop:Generator_TablePropName="BadRecords">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RowNumber" msdata:Caption="Row Number" msprop:Generator_UserColumnName="RowNumber" msprop:Generator_ColumnVarNameInTable="columnRowNumber" msprop:Generator_ColumnPropNameInRow="RowNumber" msprop:Generator_ColumnPropNameInTable="RowNumberColumn" type="xs:int" />
+              <xs:element name="OriginalSource" msdata:Caption="Original Source" msprop:Generator_UserColumnName="OriginalSource" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnOriginalSource" msprop:Generator_ColumnPropNameInTable="OriginalSourceColumn" msprop:Generator_ColumnPropNameInRow="OriginalSource" type="xs:string" minOccurs="0" />
+              <xs:element name="ErrorMessage" msdata:Caption="Error Message" msprop:Generator_UserColumnName="ErrorMessage" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnErrorMessage" msprop:Generator_ColumnPropNameInTable="ErrorMessageColumn" msprop:Generator_ColumnPropNameInRow="ErrorMessage" type="xs:string" minOccurs="0" />
+              <xs:element name="csv" msdata:DataType="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msdata:Caption="Comma Separated Values" msprop:Generator_UserColumnName="csv" msprop:Generator_ColumnPropNameInRow="csv" msprop:Generator_ColumnVarNameInTable="columncsv" msprop:Generator_ColumnPropNameInTable="csvColumn" type="xs:anyType" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BadRecords" />
+      <xs:field xpath="mstns:RowNumber" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
